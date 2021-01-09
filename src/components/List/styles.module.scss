@@ -1,0 +1,36 @@
+.Container {
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+    top: 55px;
+}
+
+.Item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+}
+
+.Delete {
+    visibility: hidden;
+    float: right;
+}
+
+.Item:hover .Delete {
+    visibility: visible;
+}
+
+.Edit {
+    display: inline-block;
+    width: calc(100% - 80px);
+}
+
+@media screen and (max-width: 767px) {
+    .Delete {
+        visibility: visible;
+    }
+}
