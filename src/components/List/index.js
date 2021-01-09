@@ -39,7 +39,6 @@ const List = ({checkedToDoList=[],uncheckedToDoList=[]}) => {
 
     const updateItem = (e,el) => {
         const item = (text.current || '').trim();
-        console.log('disp', item);
 
         if (item.length > 1) {
             dispatch(updateToDo({
